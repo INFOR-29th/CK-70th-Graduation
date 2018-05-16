@@ -5,7 +5,7 @@ let AnnSchema = new Schema({
     title: { type: String , required: true },
     content: { type: String , required: true },
     createDate: { type: Date, default: new Date() },
-    author: { type: String , required: true }
+    author: { type: String }
 })
 
 let Ann = mongoose.model('Ann', AnnSchema)
@@ -18,4 +18,7 @@ mongoose.connect('mongodb://localhost:27017/ck_70th_graduation', err => {
     }
 })
 
-module.exports = { Ann }
+module.exports = {
+    mongoose,
+    Ann
+}
