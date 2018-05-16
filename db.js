@@ -8,7 +8,7 @@ let AnnSchema = new Schema({
     author: { type: String , required: true }
 })
 
-mongoose.model('Ann', AnnSchema)
+let Ann = mongoose.model('Ann', AnnSchema)
 
 mongoose.connect('mongodb://localhost:27017/ck_70th_graduation', err => {
     if (err) {
@@ -17,3 +17,5 @@ mongoose.connect('mongodb://localhost:27017/ck_70th_graduation', err => {
         console.log('connected to db')
     }
 })
+
+module.exports = { Ann }
