@@ -1,9 +1,7 @@
 
 let { mongoose, Ann } = require('./db.js')
-const express = require('express');
-const config  = require('./config.json')
-const router  = express.Router({ mergeParams: true });
-const port    = config.port || 3000;
+const express = require('express')
+const router  = express.Router({ mergeParams: true })
 
 router.get('/ann', (req, res) => {
     Ann.find().then((anns) => {
@@ -26,10 +24,10 @@ router.post('/ann', (req, res) => {
 
 router.put('/ann', (req, res, next) => {
 
-});
+})
 
 router.delete('/ann', (req, res, next) => {
 
-});
+})
 
-module.exports = router;
+module.exports = router
