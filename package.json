@@ -1,0 +1,22 @@
+{
+  "name": "ck-70th-graduation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INFOR-29th/CK-70th-Graduation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/INFOR-29th/CK-70th-Graduation/issues"
+  },
+  "homepage": "https://github.com/INFOR-29th/CK-70th-Graduation#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
