@@ -1,9 +1,11 @@
 require('./db.js')
-const express = require('express');
-const app = express();
-const port = 3000;
+const express = require('express')
+const app     = express()
+const config  = require('./config.json')
+const port    = config.port || 3000;
 
-// mongoose.connect('mongodb://localhost/infor-academy');
+app.use('/assets', express.static(__dirname + '/assets'))
+app.use('/images', express.static(__dirname + '/images'))
 
 app.get('/api/ann/:id', (req, res) => {
     let id = req.params.id;
@@ -23,5 +25,5 @@ app.delete('/api/ann', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`listening on port ${port}`);
+  console.log(`Running on port ${port}`);
 });
