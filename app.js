@@ -1,7 +1,7 @@
-const express = require('express');
-const app = express();
-const config = require('./config.json')
-const port = config.port || 3000;
+const express = require('express')
+const app     = express()
+const config  = require('./config.json')
+const port    = config.port || 3000;
 
 app.use('/assets', express.static(__dirname + '/assets'))
 app.use('/images', express.static(__dirname + '/images'))
