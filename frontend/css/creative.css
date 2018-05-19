@@ -187,7 +187,7 @@ header.masthead::after {
   height: 100%;
   z-index: -1;
   opacity: 0.7;
-  background-image: url('../img/dj2.jpg');
+  background-image: url("/img/dj3.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -ms-background-size: cover;
