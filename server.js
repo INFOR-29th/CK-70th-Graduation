@@ -5,7 +5,7 @@ const apiRouter = require('./api/api.js')
 const config  = require('./config.json')
 const port    = config.port || 3000
 
-app.use('/', express.static(__dirname + '/creative'))
+app.use('/', express.static(__dirname + '/frontend'))
 app.use('/api', apiRouter)
 app.use(bodyParser.urlencoded({ extended: true }))
 
