@@ -4,4 +4,4 @@ config.json
 ./config.json
 *.swp
 *.log
-
+.DS_Store
