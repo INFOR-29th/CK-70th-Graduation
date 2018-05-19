@@ -8,6 +8,10 @@ let AnnSchema = new Schema({
     author: { type: String }
 })
 
+let SongSchema = new Schema({
+    title: { }
+})
+
 let Ann = mongoose.model('Ann', AnnSchema)
 
 mongoose.connect('mongodb://localhost:27017/ck_70th_graduation', err => {
