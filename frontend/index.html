@@ -319,8 +319,9 @@
       </div>
     </div>
   </section>
-  <section class="bg-primary" id="traffic" style="background-color: #212529!important" style="padding: 50px;">
-    <!-- <h2 class="section-heading text-white">交通資訊</h2> -->
+  <section class="bg-primary" id="traffic" style="background-color: #212529!important; padding-top: 40px;">
+    <h2 class="section-heading text-white" style="text-align: center; ">交通資訊</h2>
+    <hr class="light my-4">
     <div id="map" style="position: relative; overflow: hidden; height: 70vh;"></div>
     <script>
       var ckHighSchool = { lat: 25.031102, lng: 121.512235 }
@@ -331,7 +332,7 @@
         // Styles a map in night mode.
         var map = new google.maps.Map(document.getElementById('map'), {
           center: ckHighSchool,
-          zoom: 16.5,
+          zoom: 17,
           gestureHandling: 'none',
           styles: [
             {
@@ -533,11 +534,11 @@
       }
 
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyQZc3ZkODOKCKg_7vqUnDqSGK4Uqfaec&callback=initMap" async
-      defer></script>
+    <script async defer 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyQZc3ZkODOKCKg_7vqUnDqSGK4Uqfaec&callback=initMap&sensor=false">
+    </script>
     <!-- <div class="row"> -->
     <!-- <div class="col-lg-12 mx-auto text-center"> -->
-    <!-- <hr class="light my-4"> -->
     <!-- </div> -->
     <!-- </div> -->
   </section>
