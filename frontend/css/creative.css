@@ -170,8 +170,14 @@ header.masthead {
   position: relative;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background: #000;
-  z-index: -1;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/dj2.jpg);
+    background-size: cover;
+  /* z-index: -1; */
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -179,7 +185,7 @@ header.masthead {
   background-size: cover;
 }
 
-header.masthead::after {
+/* header.masthead::after {
   content: '';
   position: absolute;
   top: 0;
@@ -195,7 +201,7 @@ header.masthead::after {
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-}
+} */
 
 header.masthead hr {
   margin-top: 30px;
