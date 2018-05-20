@@ -27,6 +27,7 @@
 
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="vendor/hover-min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/custom.css" rel="stylesheet">
@@ -68,13 +69,16 @@
       </div>
     </div>
   </nav>
+
   <div style="overflow: hidden;">
     <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-2"></div>
           <div class="col-lg-8 col-md-12">
-            <img src="img/logo_transparent.png" style="width:90%">
+            <a class="js-scroll-trigger" href="#about">
+                <img src="img/logo_transparent.png" style="width:90%;" class="hvr-pulse">
+            </a>
           </div>
         </div>
       </div>
@@ -85,9 +89,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading text-white">典禮主題</h2>
+          <h2 class="section-heading text-white">放學後，你在做什麼呢？</h2>
           <hr class="light my-4">
-          <p class="text-faded mb-6" style="font-size: 20px">打球、回家、唸書、約會、補習、玩社團…？ 放學似乎不完全是個終點，它反而更像是，另一段全新旅程的起點。
+          <p class="text-faded mb-6" style="font-size: 20px">打球、回家、唸書、約會、補習、玩社團…？<br> 放學似乎不完全是個終點，它反而更像是，另一段全新旅程的起點。
             <br> 每一個建中生，每一個上課日，都經歷了不太一樣的放學時光，品嚐著名為日常的滋味。三年過去了，看盡繁華落寞，嚐遍酸甜苦辣。
             <br> 而畢業典禮，正是最後一次放學 只是，這次放學後，我們不再是在校生；這次畢業後，身邊熟悉的人事物都將陸續遠去。
             <br> 全新的生活，迎頭碰上；身心的成長，閃躲不及 是該好好辦場派對，向你的夥伴們告別，細數那些屬於你們的回憶，抑或是在那些懷念的老地方，仔細回味。
@@ -284,6 +288,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-12" style="color:white">
           <h2 class="section-heading text-center">聯絡我們</h2>
+          <br>
           <table class="table center">
             <tbody>
               <tr>
@@ -324,7 +329,7 @@
     <hr class="light my-4">
     <div id="map" style="position: relative; overflow: hidden; height: 70vh;"></div>
     <script>
-      var ckHighSchool = { lat: 25.031102, lng: 121.512235 }
+      var ckHighSchool = { lat: 25.0296323, lng: 121.5123359 }
       var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
       var labelIndex = 0;
 
@@ -534,8 +539,7 @@
       }
 
     </script>
-    <script async defer 
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyQZc3ZkODOKCKg_7vqUnDqSGK4Uqfaec&callback=initMap&sensor=false">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyQZc3ZkODOKCKg_7vqUnDqSGK4Uqfaec&callback=initMap&sensor=false">
     </script>
     <!-- <div class="row"> -->
     <!-- <div class="col-lg-12 mx-auto text-center"> -->
