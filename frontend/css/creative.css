@@ -172,8 +172,8 @@ header.masthead {
   padding-bottom: calc(10rem - 56px);
   background: 
     linear-gradient(
-      rgba(0, 0, 0, 0.2), 
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
     ),
     url(../img/dj3.jpg);
     background-size: cover;
