@@ -175,7 +175,7 @@ header.masthead {
       rgba(0, 0, 0, 0.2), 
       rgba(0, 0, 0, 0.2)
     ),
-    url(../img/dj2.jpg);
+    url(../img/dj3.jpg);
     background-size: cover;
   /* z-index: -1; */
   background-position: center center;
@@ -191,9 +191,9 @@ header.masthead {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
   opacity: 0.7;
-  background-image: url("/img/dj3.jpg");
+  background: url("/img/dj3.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -ms-background-size: cover;
