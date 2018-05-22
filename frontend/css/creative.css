@@ -172,11 +172,11 @@ header.masthead {
   padding-bottom: calc(10rem - 56px);
   background: 
     linear-gradient(
-      rgba(0, 0, 0, 0.4), 
-      rgba(0, 0, 0, 0.4)
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
     ),
-    url(../img/dj3.jpg);
-    background-size: cover;
+    url(../img/PJPEGs/party.prog.jpg);
+  background-size: cover;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
