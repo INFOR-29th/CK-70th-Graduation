@@ -2,15 +2,27 @@ body {
     font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif !important;
 }
 
-hr.divider {
-    max-width: 100%;
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    background-image: linear-gradient(to right, #333, #ccc, #333);
-}
-
 section.dark {
     background: linear-gradient( to right,#212529,#ccc,#212529) left bottom #212529 no-repeat;
     background-size: 100% 2px;
+}
+
+section.agenda {
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/PJPEGs/agen.prog.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section.agenda table {
+    background-color:rgba(20,21,22,0.45)
 }
