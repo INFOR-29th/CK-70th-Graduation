@@ -78,11 +78,13 @@ gulp.task('vendor', function() {
 gulp.task('jpg:pjpegs', function() {
   return gulp.src([
     './img/*.jpg',
-    '!./img/*.prog.jpg'
+    './img/photos/*.jpg',
     ])
-    .pipe(imagemin({
-      progressive: true
-    }))
+    .pipe(imagemin([
+      imagemin.jpegtran({
+        progressive: true
+      })
+    ]))
     .pipe(rename({
       suffix: '.prog'
     }))

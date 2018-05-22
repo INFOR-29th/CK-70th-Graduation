@@ -1,3 +1,16 @@
 body {
     font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif !important;
 }
+
+hr.divider {
+    max-width: 100%;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    background-image: linear-gradient(to right, #333, #ccc, #333);
+}
+
+section.dark {
+    background: linear-gradient( to right,#212529,#ccc,#212529) left bottom #212529 no-repeat;
+    background-size: 100% 2px;
+}

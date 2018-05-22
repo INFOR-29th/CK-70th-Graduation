@@ -28,7 +28,6 @@
     "dependencies": {
         "bootstrap": "4.1.1",
         "font-awesome": "4.7.0",
-        "gulp-imagemin": "^4.1.0",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",
@@ -41,6 +40,7 @@
         "gulp-header": "2.0.5",
         "gulp-rename": "^1.2.2",
         "gulp-sass": "4.0.1",
-        "gulp-uglify": "3.0.0"
+        "gulp-uglify": "3.0.0",
+        "gulp-imagemin": "^4.1.0"
     }
 }
