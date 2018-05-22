@@ -26,3 +26,7 @@ section.agenda {
 section.agenda table {
     background-color:rgba(20,21,22,0.45)
 }
+.btn-light {
+    background-color:#212529;
+    color:#f8f9fa;
+}

@@ -293,10 +293,8 @@ header.masthead p {
 }
 
 .btn {
-  font-weight: 700;
   text-transform: uppercase;
-  border: none;
-  border-radius: 300px;
+  border-color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif !important;
 }
 
