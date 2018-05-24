@@ -93,6 +93,24 @@ gulp.task('jpg:pjpegs', function() {
 
 gulp.task('jpg', ['jpg:pjpegs'])
 
+// Optimize png
+gulp.task('png:optipng', function() {
+  return gulp.src([
+    './img/logo-min.png',
+    ])
+    .pipe(imagemin([
+      imagemin.optipng({
+        optimizationLevel:7
+      })
+    ]))
+    .pipe(rename({
+      suffix: '.opti'
+    }))
+    .pipe(gulp.dest('./img/optipng'))
+})
+
+gulp.task('png', ['png:optipng'])
+
 // Minify CSS
 gulp.task('css:minify', function() {
   return gulp.src([
@@ -128,7 +146,7 @@ gulp.task('js:minify', function() {
 gulp.task('js', ['js:minify']);
 
 // Default task
-gulp.task('default', ['css', 'js', 'vendor', 'jpg']);
+gulp.task('default', ['css', 'js', 'vendor', 'jpg', 'png']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
