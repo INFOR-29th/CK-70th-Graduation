@@ -6,6 +6,7 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
+var imagemin = require('gulp-imagemin')
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -65,16 +66,53 @@ gulp.task('vendor', function() {
 });
 
 // Compile SCSS
-gulp.task('css:compile', function() {
-  return gulp.src('./scss/**/*.scss')
-    .pipe(sass.sync({
-      outputStyle: 'expanded'
-    }).on('error', sass.logError))
-    .pipe(gulp.dest('./css'))
-});
+// gulp.task('css:compile', function() {
+//   return gulp.src('./scss/**/*.scss')
+//     .pipe(sass.sync({
+//       outputStyle: 'expanded'
+//     }).on('error', sass.logError))
+//     .pipe(gulp.dest('./css'))
+// });
+
+// Optimize JPEG to PJPEGs
+gulp.task('jpg:pjpegs', function() {
+  return gulp.src([
+    './img/*.jpg',
+    './img/photos/*.jpg',
+    ])
+    .pipe(imagemin([
+      imagemin.jpegtran({
+        progressive: true
+      })
+    ]))
+    .pipe(rename({
+      suffix: '.prog'
+    }))
+    .pipe(gulp.dest('./img/PJPEGs'))
+})
+
+gulp.task('jpg', ['jpg:pjpegs'])
+
+// Optimize png
+gulp.task('png:optipng', function() {
+  return gulp.src([
+    './img/logo-min.png',
+    ])
+    .pipe(imagemin([
+      imagemin.optipng({
+        optimizationLevel:7
+      })
+    ]))
+    .pipe(rename({
+      suffix: '.opti'
+    }))
+    .pipe(gulp.dest('./img/optipng'))
+})
+
+gulp.task('png', ['png:optipng'])
 
 // Minify CSS
-gulp.task('css:minify', ['css:compile'], function() {
+gulp.task('css:minify', function() {
   return gulp.src([
       './css/*.css',
       '!./css/*.min.css'
@@ -88,7 +126,7 @@ gulp.task('css:minify', ['css:compile'], function() {
 });
 
 // CSS
-gulp.task('css', ['css:compile', 'css:minify']);
+gulp.task('css', ['css:minify']);
 
 // Minify JavaScript
 gulp.task('js:minify', function() {
@@ -108,7 +146,7 @@ gulp.task('js:minify', function() {
 gulp.task('js', ['js:minify']);
 
 // Default task
-gulp.task('default', ['css', 'js', 'vendor']);
+gulp.task('default', ['css', 'js', 'vendor', 'jpg', 'png']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {

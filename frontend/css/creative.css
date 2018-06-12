@@ -19,7 +19,7 @@ hr.light {
 }
 
 a {
-  color: #212529;
+  color: #ccc;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -170,30 +170,17 @@ header.masthead {
   position: relative;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background: #000;
-  z-index: 0;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/PJPEGs/masthead-bg.prog.jpg);
   background-size: cover;
-}
-
-header.masthead::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.7;
-  background: url("/img/dj3.jpg");
-  background-repeat: no-repeat;
   background-position: center center;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -306,7 +293,6 @@ header.masthead p {
 }
 
 .btn {
-  font-weight: 700;
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
