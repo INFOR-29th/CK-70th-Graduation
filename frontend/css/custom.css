@@ -1,3 +1,15 @@
 body {
     font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif !important;
 }
+.img_mask {
+    border-radius: 50%;
+    color: black;
+    opacity: 0.5;
+}
+.img_div {
+    background: black;
+    border-radius: 50px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+}
